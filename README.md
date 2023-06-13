@@ -4,7 +4,7 @@
   <title>Presentation Overview</title>
 </head>
 <body>
-  <h1>Slide: Presentation Overview</h1>
+  <h1>Presentation Overview</h1>
   <h2>Fraud Detection: Leveraging Machine Learning for Secure Transactions</h2>
   <h3>Introduction:</h3>
   <ul>
