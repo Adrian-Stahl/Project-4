@@ -26,7 +26,7 @@ We chose to use a Keras Sequential model for our analysis.
 
 ### Model Architecture
 Our sequential model consisted of three layers with a total of 2,941 trainable parameters.
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/model_structure.png)
 
 ## Model Training and Evaluation
 Due to the size of the dataset, we ran ten epochs during model training. The model achieved a loss of 0.0027400129474699497 and an accuracy of 0.9994659423828125.
@@ -34,9 +34,9 @@ Due to the size of the dataset, we ran ten epochs during model training. The mod
 ### Linear Regression
 After applying a random oversampler to our linear regression model, its performance decreased from 0.8904248433622179 to 0.8426175294757221. However, the resampled prediction showed improvement in identifying fraudulent cases.
 - Initital Model
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/intial_linear_regression.png)
 - Resampled Model
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/resampled_linear_regression.png)
 
 
 ## Conclusion
@@ -47,7 +47,7 @@ While all three models performed reasonably well with accuracy scores around 80%
 ### Summary of Findings
 - The Keras Sequential model performed better overall, but this can be attributed to the imbalanced nature of the dataset. 
 - Our [Tableau dashboard](https://public.tableau.com/app/profile/richard.moreno/viz/FraudDetectionDashboard_16865366705560/Dashboard) visualizations revealed a significant imbalance between fraudulent and non-fraudulent transactions. 
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/fraud_piechart.png)
 - Further research led us to explore data resampling techniques to address this issue, resulting in improved performance for the linear regression model.
 
 
@@ -58,16 +58,16 @@ While all three models performed reasonably well with accuracy scores around 80%
 2. Start running the code from the first cell.
 3. When prompted to mount your Google Drive, grant Colab permission to access the file.
 4. **Do not run the following cell until you have changed the file path to match the location of the "transactions_train.csv" file in your Google Drive.**
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/drive_cell.png)
 5. To change the file path, click the "Files" button in Colab.
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/Files_image.png)
 6. Open the folder where you have the "transactions_train.csv" file, and click the three buttons on the side.
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/Three_buttons_image.png)
 7. Select "Copy path"
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/copy_path_image.png)
 8. Paste it inside the single quotes in the cell.
    - You will need to replace the path already within the quotes.
-![alt text]()
+![alt text](https://github.com/Adrian-Stahl/Project-4/blob/main/Images/file_path_image.png)
 9. Run the cell.
 10. Afterwards, you will be able to run all cells normally.
 
