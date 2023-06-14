@@ -13,7 +13,7 @@ The objective of this project is to address the problem of fraud detection in fi
 ## Methodology and Results
 
 ### Dataset Description
-For this project, we utilized a synthetic dataset obtained from Kaggle. The dataset includes information such as transaction type, transaction amount, and the sender and recipient's account balance before and after each transaction.
+For this project, we utilized a synthetic dataset obtained from [Kaggle](https://www.kaggle.com/datasets/bannourchaker/frauddetection). The dataset includes information such as transaction type, transaction amount, and the sender and recipient's account balance before and after each transaction.
 
 ### Data Preprocessing
 To prepare the data for analysis, we used the PySpark library in Colab for data cleaning and preprocessing.
@@ -24,7 +24,7 @@ We chose to use a Keras Sequential model for our analysis. This model is well-su
 ### Model Architecture
 Our sequential model consisted of three layers with a total of 2,941 trainable parameters.
 
-Model Training and Evaluation
+## Model Training and Evaluation
 Due to the size of the dataset, we ran ten epochs during model training. The model achieved a loss of 0.0027400129474699497 and an accuracy of 0.9994659423828125.
 
 ### Linear Regression
@@ -41,15 +41,19 @@ The Keras Sequential model performed better overall, but this can be attributed 
 
 
 ## Instructions to Run Notebooks
-Both notebooks must be run using Colab.
-Before running the code, download the "transactions_train.csv" file and upload it to your Google Drive.
-Start running the code from the first cell.
-When prompted to mount your Google Drive, grant permission to Colab to access the file.
-** Do not run the following cell until you have changed the file path to match the location of your "transactions_train.csv" file. **
-To change the file path, click the "Files" button in Colab, navigate to the folder where you have the "transactions_train.csv" file, and click the three buttons on the side.
-Select "Copy path" and paste it inside the single quotes in the cell.
-Run the cell.
-Afterwards, you will be able to run all cells
+- Both notebooks must be run using Colab.
+- The following instructions will apply to both the tf_model.ipynb and sklearn_model.ipynb notebooks.
+1. Before running the code, download the ["transactions_train.csv" file](https://drive.google.com/file/d/1wm5uV6MKiL-HvUJ3JntBucqjS4VdrASO/view?usp=sharing) and upload it to your Google Drive.
+2. Start running the code from the first cell.
+3. When prompted to mount your Google Drive, grant Colab permission to access the file.
+4. **Do not run the following cell until you have changed the file path to match the location of your "transactions_train.csv" file.**
+5. To change the file path, click the "Files" button in Colab.
+6. Open the folder where you have the "transactions_train.csv" file, and click the three buttons on the side.
+7. Select "Copy path"
+8. Paste it inside the single quotes in the cell.
+   - You will need to replace the path already within the quotes.
+9. Run the cell.
+10. Afterwards, you will be able to run all cells normally.
 
 
 
