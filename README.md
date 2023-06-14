@@ -13,13 +13,16 @@ The objective of this project is to address the problem of fraud detection in fi
 ## Methodology and Results
 
 ### Dataset Description
-For this project, we utilized a synthetic dataset obtained from [Kaggle](https://www.kaggle.com/datasets/bannourchaker/frauddetection). The dataset includes information such as transaction type, transaction amount, and the sender and recipient's account balance before and after each transaction.
+For this project, we utilized a synthetic dataset obtained from [Kaggle](https://www.kaggle.com/datasets/bannourchaker/frauddetection). 
+- The dataset includes information such as transaction type, transaction amount, and the sender and recipient's account balance before and after each transaction.
 
 ### Data Preprocessing
 To prepare the data for analysis, we used the PySpark library in Colab for data cleaning and preprocessing.
 
 ### Model Selection: Keras Sequential Model
-We chose to use a Keras Sequential model for our analysis. This model is well-suited for identifying patterns and relationships between transaction amount, initial balance, and balance after a transaction. Its flexibility allows us to create a customizable neural network architecture.
+We chose to use a Keras Sequential model for our analysis. 
+- This model is well-suited for identifying patterns and relationships between transaction amount, initial balance, and balance after a transaction. 
+- Its flexibility allowed  us to create a customizable neural network architecture.
 
 ### Model Architecture
 Our sequential model consisted of three layers with a total of 2,941 trainable parameters.
@@ -29,6 +32,8 @@ Due to the size of the dataset, we ran ten epochs during model training. The mod
 
 ### Linear Regression
 After applying a random oversampler to our linear regression model, its performance decreased from 0.8904248433622179 to 0.8426175294757221. However, the resampled prediction showed improvement in identifying fraudulent cases.
+- Initital Model
+- Resampled Model
 
 
 ## Conclusion
@@ -37,7 +42,9 @@ After applying a random oversampler to our linear regression model, its performa
 While all three models performed reasonably well with accuracy scores around 80%, our access to real-world data was limited. Additionally, the dataset provided only allowed training the models with features related to transaction amount and its impact on the sender and recipient's account balance.
 
 ### Summary of Findings
-The Keras Sequential model performed better overall, but this can be attributed to the imbalanced nature of the dataset. Our Tableau dashboard visualizations revealed a significant imbalance between fraudulent and non-fraudulent transactions. Further research led us to explore data resampling techniques to address this issue, resulting in improved performance for the linear regression model.
+- The Keras Sequential model performed better overall, but this can be attributed to the imbalanced nature of the dataset. 
+- Our [Tableau dashboard](https://public.tableau.com/app/profile/richard.moreno/viz/FraudDetectionDashboard_16865366705560/Dashboard) visualizations revealed a significant imbalance between fraudulent and non-fraudulent transactions. 
+- Further research led us to explore data resampling techniques to address this issue, resulting in improved performance for the linear regression model.
 
 
 ## Instructions to Run Notebooks
@@ -46,7 +53,7 @@ The Keras Sequential model performed better overall, but this can be attributed 
 1. Before running the code, download the ["transactions_train.csv" file](https://drive.google.com/file/d/1wm5uV6MKiL-HvUJ3JntBucqjS4VdrASO/view?usp=sharing) and upload it to your Google Drive.
 2. Start running the code from the first cell.
 3. When prompted to mount your Google Drive, grant Colab permission to access the file.
-4. **Do not run the following cell until you have changed the file path to match the location of your "transactions_train.csv" file.**
+4. **Do not run the following cell until you have changed the file path to match the location of the "transactions_train.csv" file in your Google Drive.**
 5. To change the file path, click the "Files" button in Colab.
 6. Open the folder where you have the "transactions_train.csv" file, and click the three buttons on the side.
 7. Select "Copy path"
