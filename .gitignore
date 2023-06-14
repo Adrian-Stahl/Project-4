@@ -1,8 +1,8 @@
 # Ignore Mac system files
-.DS_store
+*.DS_store
 
 # Ignore attributes
-.gitattributes
+*.gitattributes
 
 # Ignore checkpoints
-.ipynb_checkpoints
+*.ipynb_checkpoints
